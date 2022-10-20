@@ -1,0 +1,2 @@
+class GrapeVariety < ApplicationRecord
+end
