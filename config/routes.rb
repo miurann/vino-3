@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: 'users#index'
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
-  post 'logout', to: 'user_sessions#destroy'
+  delete 'logout', to: 'user_sessions#destroy'
   resources :users
   resources :admin_users
 
