@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <%= form_with model: @wine, url: admin_wines_url, local: true do |f| %>
+        <div class="form-group">
+          <%= f.label :region_id %><br />
+          <%= f.collection_select :region_id, Region.all, :id, :name, include_blank: true, class: 'form-controll' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :name %><br />
+          <%= f.text_field :name, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :jpn_name %><br />
+          <%= f.text_field :jpn_name, class: 'form-control' %>
+        <div class="form-group">
+          <%= f.label :producer %><br />
+          <%= f.text_field :producer, class: 'form-control' %>
+        </div>
+        </div>
+        <div class="form-group">
+          <%= f.label :category %><br />
+          <%= f.select :category, Wine.categories_i18n.invert, include_blank: true, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :color %><br />
+          <%= f.select :color, Wine.colors_i18n.invert, include_blank: true, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :price %><br />
+          <%= f.number_field :price, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :sweetness %><br />
+          <%= f.select :sweetness, Wine.sweetnesses_i18n.invert, include_blank: true, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :body %><br />
+          <%= f.select :body, Wine.bodies_i18n.invert, include_blank: true, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :acidity %><br />
+          <%= f.select :acidity, Wine.acidities_i18n.invert, include_blank: true, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :tannin %><br />
+          <%= f.select :tannin, Wine.tannins_i18n.invert, include_blank: true, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :description %><br />
+          <%= f.text_area :description, class: 'form-control' %>
+        </div>
+        <div class="actions">
+          <%= f.submit class: 'btn btn-primary' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
