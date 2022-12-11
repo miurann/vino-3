@@ -50,6 +50,14 @@
           <%= f.label :description %><br />
           <%= f.text_area :description, class: 'form-control' %>
         </div>
+        <div class="form-group">
+          <%= f.label :grape_variety %><br />
+          <%= f.collection_check_boxes :grape_variety_ids, GrapeVariety.all, :id, :name, class: 'form-control' %>
+          </div>
+        <div class="form-group">
+          <%= f.label :aroma %><br />
+          <%= f.collection_check_boxes :aroma_ids, Aroma.all, :id, :name, class: 'form-control' %>
+          </div>
         <div class="actions">
           <%= f.submit class: 'btn btn-primary' %>
         </div>
