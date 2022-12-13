@@ -34,22 +34,27 @@ ja:
         many: '多い'
         so_many: 'とても多い'
   activerecord:
-  models:
-    wine: 'ワイン'
-  attributes:
-    wine:
-      name: 'ワイン名'
-      producer: '生産者'
-      jpn_name: 'ヨミガナ'
-      label: 'ラベル'
-      image: '画像'
-      category: 'カテゴリー'
-      color: '色'
-      description: '説明'
-      sweetness: '甘さ'
-      body: 'ボリューム'
-      acidity: '酸味'
-      tannin: 'タンニン'
+    models:
+      wine: 'ワイン'
+      region: '生産州'
+      grape_variety: 'ぶどう品種'
+      aroma: 'アロマ'
+    attributes:
+      wine:
+        name: 'ワイン名'
+        producer: '生産者'
+        jpn_name: 'ヨミガナ'
+        label: 'ラベル'
+        image: '画像'
+        category: 'カテゴリー'
+        color: '色'
+        price: '価格'
+        description: '説明'
+        sweetness: '甘さ'
+        body: 'ボリューム'
+        acidity: '酸味'
+        tannin: 'タンニン'
+        created_at: '作成日'
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
