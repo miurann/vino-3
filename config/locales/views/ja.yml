@@ -11,6 +11,8 @@ ja:
       deleted: '%{item}を削除しました'
       updated: '%{item}を更新しました'
       not_updated: '%{item}を更新できませんでした'
+      created: '%{item}を作成しました'
+      not_created: '%{item}を作成できませんでした'
   users:
     new:
       title: 'ユーザー登録'
