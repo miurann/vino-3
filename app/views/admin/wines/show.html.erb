@@ -1,2 +1,111 @@
-<h1>Wines#show</h1>
-<p>Find me in app/views/wines/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1><%= t('.title') %></h1>
+      <div class="text-right mb-3">
+        <%= link_to t('defaults.edit'), edit_admin_wine_path(@wine), class: 'btn btn-success' %>
+        <%= link_to t('defaults.delete'), admin_wine_path(@wine), method: :delete, data: { confirm: t('defaults.message.delete_confirm') }, class: 'btn btn-danger' %>
+      </div>
+      <table class="table table-bordered bg-white">
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:id) %></th>
+          <td><%= @wine.id %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:name) %></th>
+          <td><%= @wine.name %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:jpn_name) %></th>
+          <td><%= @wine.jpn_name %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Region.model_name.human %></th>
+          <td><%= @wine.region.name %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:producer) %></th>
+          <td><%= @wine.producer %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:category) %></th>
+          <td><%= @wine.category_i18n %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:color) %></th>
+          <td><%= @wine.color_i18n %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:price) %></th>
+          <td><%= @wine.price %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:sweetness) %></th>
+          <td><%= @wine.sweetness_i18n %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:body) %></th>
+          <td><%= @wine.body_i18n %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:acidity) %></th>
+          <td><%= @wine.acidity_i18n %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:tannin) %></th>
+          <td><%= @wine.tannin_i18n %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:description) %></th>
+          <td><%= @wine.description %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:created_at) %></th>
+          <td><%= l @wine.created_at, format: :long %></td>
+        </tr>
+      </table>
+
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- /.col-md-6 -->
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h6 class="m-0"><%= GrapeVariety.model_name.human %></h6>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                <% @wine.grape_varieties.each do |grape| %>
+                  <li class="list-group-item"><%= grape.name %></li>
+                <% end %>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h6 class="m-0"><%= Aroma.model_name.human %></h6>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                <% @wine.aromas.each do |aroma| %>
+                  <li class="list-group-item"><%= aroma.name %></li>
+                <% end %>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<%= t('.title') %>
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col"><%= Wine.human_attribute_name(:id) %></th>
+            <th scope="col"><%= Region.model_name.human %></th>
+            <th scope="col"><%= Wine.human_attribute_name(:name) %></th>
+            <th scope="col"><%= Wine.human_attribute_name(:jpn_name) %></th>
+            <th scope="col"><%= Wine.human_attribute_name(:category) %></th>
+            <th scope="col"><%= Wine.human_attribute_name(:color) %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render @wines %>
+        </tbody>
+      </table>
+    </div>
+  </div>

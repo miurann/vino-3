@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-      <%= form_with model: @wine, url: admin_wines_url, local: true do |f| %>
+      <%= form_with model: @wine, url: url, local: true do |f| %>
         <div class="form-group">
           <%= f.label :region_id %><br />
           <%= f.collection_select :region_id, Region.all, :id, :name, include_blank: true, class: 'form-controll' %>
