@@ -11,8 +11,9 @@ class Admin::WinesController < Admin::BaseController
   def create
     @wine = Wine.new(wine_params)
     if @wine.save
-      redirect_to admin_wines_path
+      redirect_to admin_wines_path, success: t('defaults.message.created', item: Wine.model_name.human)
     else
+      flash.now[:danger] = t('defaults.message.not_created', item: Wine.model_name.human)
       render :new
     end
   end
@@ -23,15 +24,16 @@ class Admin::WinesController < Admin::BaseController
 
   def update
     if @wine.update(wine_params)
-      redirect_to admin_wine_path(@wine), notice: t('defaults.message.updated', item: Wine.model_name.human)
+      redirect_to admin_wine_path(@wine), success: t('defaults.message.updated', item: Wine.model_name.human)
     else
-      render :edit, notice: t('defaults.message.not_updated', item: Wine.model_name.human)
+      flash.now[:danger] = t('defaults.message.not_updated', item: Wine.model_name.human)
+      render :edit
     end
   end
 
   def destroy
     @wine.destroy!
-    redirect_to admin_wines_path, notice: t('defaults.message.deleted', item: Wine.model_name.human)
+    redirect_to admin_wines_path, success: t('defaults.message.deleted', item: Wine.model_name.human)
   end
 
   private
