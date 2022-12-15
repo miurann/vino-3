@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   delete 'logout', to: 'user_sessions#destroy'
   resources :users
   resources :admin_users
+  resources :wines, only: %i[index show]
 
   namespace :admin do
     root to: 'dashboards#index'
