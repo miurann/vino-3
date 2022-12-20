@@ -43,6 +43,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 gem 'enum_help'
+gem 'foreman'
 gem 'seed-fu'
 gem 'sorcery'
 gem 'jquery-rails'
