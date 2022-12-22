@@ -1,3 +1,3 @@
 (() => {
 })();
-//# sourceMappingURL=admin.js.map
+//# sourceMappingURL=assets/admin.js.map
