@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'questions/index'
+  get 'questions/show'
   root to: 'users#index'
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'

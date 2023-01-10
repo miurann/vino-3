@@ -6,6 +6,16 @@ module.exports = {
         "whitewine": "#bef264",
       },
     },
+    fontFamily: {
+      body: [
+        'EuphemiaUCAS',
+        '"Segoe UI Emoji"',
+        '"Hiragino Kaku Gothic ProN"',
+        '"ヒラギノ角ゴ ProN W3"',
+        '"Yu Gothic"',
+        'sans-serif'
+      ]
+    }
   },
   daisyui: {
     themes: [

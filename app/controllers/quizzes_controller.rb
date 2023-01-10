@@ -3,5 +3,6 @@ class QuizzesController < ApplicationController
   end
 
   def show
+    @region = Region.find(params[:id])
   end
 end
