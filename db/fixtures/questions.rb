@@ -11,3 +11,10 @@ Question.seed do |s|
   s.description = '第2問の正解解説です'
   s.wine_id     = 2
 end
+
+Question.seed do |s|
+  s.id          = 3
+  s.content     = 'ワインの第3問出題テストです'
+  s.description = '第3問の正解解説です'
+  s.wine_id     = 5
+end

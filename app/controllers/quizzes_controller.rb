@@ -4,5 +4,6 @@ class QuizzesController < ApplicationController
 
   def show
     @region = Region.find(params[:id])
+    @questions = Question.includes(wine: :region).where(region: {id: params[:id]})
   end
 end
