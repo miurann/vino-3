@@ -27,8 +27,22 @@ Choice.seed do |s|
 end
 
 Choice.seed do |s|
-  s.id             = 4
+  s.id             = 5
   s.content        = '正解の選択肢'
   s.correct_answer = true
   s.question_id    = 2
+end
+
+Choice.seed do |s|
+  s.id             = 6
+  s.content        = 'せんたくし１'
+  s.correct_answer = false
+  s.question_id    = 3
+end
+
+Choice.seed do |s|
+  s.id             = 7
+  s.content        = '正解の選択肢'
+  s.correct_answer = true
+  s.question_id    = 3
 end

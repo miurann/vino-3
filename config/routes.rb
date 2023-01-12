@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'questions/index'
-  get 'questions/show'
   root to: 'users#index'
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
@@ -9,6 +7,7 @@ Rails.application.routes.draw do
   resources :admin_users
   resources :wines, only: %i[index show]
   resources :quizzes, only: %i[index show]
+  resources :questions, only: %i[index show]
 
   namespace :admin do
     root to: 'dashboards#index'
