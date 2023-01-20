@@ -11,4 +11,13 @@ class User < ApplicationRecord
 
   has_many :achievements, dependent: :destroy
   has_many :choices, through: :achievements
+  has_many :correct_choices, through: :achievements, source: :choice
+
+  def correct(choice)
+    correct_choices << choice
+  end
+
+  def answered?(choice)
+    correct_choices.include?(choice)
+  end
 end
