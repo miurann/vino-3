@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :wines, only: %i[index show]
   resources :quizzes, only: %i[index show]
   resources :questions, only: %i[index show]
+  resources :achievements, only: %i[create]
 
   namespace :admin do
     root to: 'dashboards#index'

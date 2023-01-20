@@ -7,7 +7,7 @@
       <%= choice.content %>
     </label>
   <% else %>
-      <label for="icorrect-answer-modal" class="btn">
+      <label for="incorrect-answer-modal" class="btn">
       <%= choice.content %>
     </label>
     <% end %>
@@ -19,20 +19,22 @@
 <div class="modal">
   <div class="modal-box">
     <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+    <p class="py-4">You get correct!</p>
     <div class="modal-action">
-      <label for="correct-answer-modal" class="btn">Yay!</label>
+      <%= button_to achievements_path(choice_id: @correct_choice.id), data: { "turbo-method": :post } do %>
+        <button class="btn">Button</button>
+      <% end %>
     </div>
   </div>
 </div>
 <!-- Mistake Answer -->
-<input type="checkbox" id="icorrect-answer-modal" class="modal-toggle" />
+<input type="checkbox" id="incorrect-answer-modal" class="modal-toggle" />
 <div class="modal">
   <div class="modal-box">
     <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
     <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
     <div class="modal-action">
-      <label for="icorrect-answer-modal" class="btn">Onemore!</label>
+      <label for="incorrect-answer-modal" class="btn">Onemore!</label>
     </div>
   </div>
 </div>
