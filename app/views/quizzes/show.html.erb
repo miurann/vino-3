@@ -1,6 +1,2 @@
-<h1><%= @region.name %></h1>
+<%= @region.name %>
 
-<% num = 0 %>
-<% @questions.each do |question| %>
-  <%= link_to "第 #{ num += 1 } 問", question_path(question) %>
-<% end %>

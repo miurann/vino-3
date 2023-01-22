@@ -1,18 +1,20 @@
+<div class="container mx-auto px-36">
 <h1>Questions#show</h1>
-<p><%= @question.content %></p>
 
+<p><%= @question.content %></p>
+<div class="flex flex-col w-1/4 mx-auto">
 <% @choices.each do |choice| %>
   <% if choice.correct_answer %>
-    <label for="correct-answer-modal" class="btn">
+    <label for="correct-answer-modal" class="btn m-4">
       <%= choice.content %>
     </label>
   <% else %>
-      <label for="incorrect-answer-modal" class="btn">
+      <label for="incorrect-answer-modal" class="btn m-4">
       <%= choice.content %>
     </label>
     <% end %>
 <% end %>
-
+</div>
 <!-- Put this part before </body> tag -->
 <!-- Correct Answer -->
 <input type="checkbox" id="correct-answer-modal" class="modal-toggle" />
@@ -37,4 +39,5 @@
       <label for="incorrect-answer-modal" class="btn">Onemore!</label>
     </div>
   </div>
+</div>
 </div>
