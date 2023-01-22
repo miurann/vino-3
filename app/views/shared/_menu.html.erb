@@ -1,0 +1,8 @@
+<div class="float-left h-screen">
+<ul class="menu bg-base-100 w-56">
+<% num = 0 %>
+<% @questions.each do |question| %>
+  <li class="hover-bordered"><%= link_to "第 #{ num += 1 } 問", question_path(question) %></li>
+<% end %>
+</ul>
+</div>
