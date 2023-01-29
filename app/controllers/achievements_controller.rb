@@ -1,12 +1,12 @@
 class AchievementsController < ApplicationController
   def create
-    @question = Question.find(3)
+    @question = Question.find()
     choice = Choice.find(params[:choice_id])
     if current_user.answered?(choice)
-      redirect_back fallback_location: @question, success: '正解してます！'
+      redirect_back fallback_location: @question
     else
       current_user.correct(choice)
-      redirect_back fallback_location: @question, success: '正解！'
+      redirect_back fallback_location: @question
     end
   end
 end
