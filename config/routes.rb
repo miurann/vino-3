@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   resources :users
   resources :admin_users
   resources :wines, only: %i[index show]
-  resources :quizzes, only: %i[index show]
-  resources :questions, only: %i[index show]
+  resources :quizzes, only: %i[index show] do
+    resources :questions, only: %i[index show]
+  end
   resources :achievements, only: %i[create]
 
   namespace :admin do
