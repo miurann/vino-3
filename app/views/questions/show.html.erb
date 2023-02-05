@@ -20,11 +20,11 @@
 <input type="checkbox" id="correct-answer-modal" class="modal-toggle" />
 <div class="modal">
   <div class="modal-box">
-    <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-    <p class="py-4">You get correct!</p>
+    <h3 class="font-bold text-lg">◎正解!</h3>
+    <p class="py-4">正解は<%= @correct_choice.content %>です。</p>
     <div class="modal-action">
-      <%= button_to achievements_path(choice_id: @correct_choice.id), data: { "turbo-method": :post } do %>
-        <button class="btn">Button</button>
+      <%= button_to achievements_path(choice_id: @correct_choice.id, question_id: @question.id, quiz_id: params[:quiz_id]), data: { "turbo-method": :post } do %>
+        <button class="btn">OK</button>
       <% end %>
     </div>
   </div>

@@ -14,7 +14,7 @@ class User < ApplicationRecord
   has_many :choices, through: :achievements
   has_many :correct_choices, through: :achievements, source: :choice
 
-  def correct(choice)
+  def answer(choice)
     correct_choices << choice
   end
 

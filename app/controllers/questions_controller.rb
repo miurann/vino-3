@@ -7,8 +7,6 @@ class QuestionsController < ApplicationController
     @questions = Question.where(region_id: params[:quiz_id])
     @question = Question.find(params[:id])
     @choices = @question.choices
-    @correct_choice = Choice.includes(:question).find_by(correct_answer: true, question: {id: params[:id]})
-    questions_region = @question.wine.region_id
-
+    @correct_choice = @choices.find_by(correct_answer: true)
   end
 end
