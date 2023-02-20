@@ -48,13 +48,16 @@ ja:
         image: '画像'
         category: 'カテゴリー'
         color: '色'
-        price: '価格'
+        price: '参考価格'
         description: '説明'
         sweetness: '甘さ'
         body: 'ボリューム'
         acidity: '酸味'
         tannin: 'タンニン'
         created_at: '作成日'
+      aroma:
+        name: '名前'
+        image: 'イメージ画像'
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
