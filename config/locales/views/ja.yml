@@ -23,6 +23,11 @@ ja:
       title: 'ログイン'
       to_register_page: '登録ページへ'
       password_forget: 'パスワードをお忘れの方はこちら'
+  wines:
+    index:
+      title: 'ワイン一覧'
+    show:
+      title: 'ワイン詳細'
   admin:
     wines:
       index:
@@ -34,3 +39,10 @@ ja:
         title: 'ワイン詳細'
       edit:
         title: 'ワイン編集'
+    aromas:
+      index:
+        title: 'アロマ一覧'
+      new:
+        title: 'アロマ新規登録'
+      edit:
+        title: 'アロマ編集'

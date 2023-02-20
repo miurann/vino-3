@@ -1,17 +1,23 @@
-<h1>Wine#show</h>
-<div class="hero min-h-screen bg-base-200">
+<div class="text-sm breadcrumbs ml-4">
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to t('wines.index.title'), wines_path %></li>
+    <li><%= t('.title') %></li>
+  </ul>
+</div>
+<div class="hero min-h-full bg-base-200">
   <div class="hero-content flex-col lg:flex-row">
-    <%= image_tag 'wines/wine_no_image.jpg', alt:'wine_image', class:'max-w-sm rounded-lg shadow-2xl' %>
+    <%= image_tag @wine.image_url, alt:'wine_image', class:'max-w-sm rounded-lg shadow-2xl mb-0 lg:mb-36', size: '300x300' %>
     <div>
-      <h1 class="text-5xl font-bold"><%= @wine.name %></h1>
+      <h1 class="text-3xl font-bold mb-8"><%= @wine.name %></h1>
 
 <div class="overflow-x-auto">
-  <table class="table w-full">
+  <table class="table table-compact w-full">
     <tbody>
       <tr>
-        <th>ボリューム</th>
-        <td>軽い</td>
-        <td>
+        <th class="w-32"><%= Wine.human_attribute_name(:body) %></th>
+        <td class="w-32">軽い</td>
+        <td class="w-80">
         <ul class="steps">
           <li class="step<%= " step-primary" if @wine.body_before_type_cast == 0 %>" data-content=""></li>
           <li class="step<%= " step-primary" if @wine.body_before_type_cast == 1 %>" data-content=""></li>
@@ -23,7 +29,7 @@
         <td>重い</td>
       </tr>
       <tr>
-        <th>甘み</th>
+        <th><%= Wine.human_attribute_name(:sweetness) %></th>
         <td>ドライ</td>
         <td>
         <ul class="steps">
@@ -37,7 +43,7 @@
         <td>甘い</td>
       </tr>
       <tr>
-        <th>酸味</th>
+        <th><%= Wine.human_attribute_name(:acidity) %></th>
         <td>まろやか</td>
         <td>
         <ul class="steps">
@@ -51,7 +57,7 @@
         <td>シャープ</td>
       </tr>
       <tr>
-        <th>タンニン</th>
+        <th><%= Wine.human_attribute_name(:tannin) %></th>
         <td>控えめ</td>
         <td>
         <ul class="steps">
@@ -64,20 +70,55 @@
         </td>
         <td>強い</td>
       </tr>
+    </tbody>
+  </table>
+  <table class="table table-compact w-full">
+    <tbody>
       <tr>
-        <th>香り</th>
+        <th class="w-32">香り</th>
         <td>
         <div class="flex flex-row">
           <% @wine.aromas.each do |aroma| %>
-            <div><%= image_tag aroma.image_url, class: 'mask mask-circle', size: '30x30' %></div>
+            <div class="tooltip" data-tip="<%= aroma.name %>"><%= image_tag aroma.image_url, class: 'mask mask-circle mx-2', size: '30x30' %></div>
           <% end %>
           </div>
         </td>
       </tr>
     </tbody>
   </table>
+  <table class="table table-compact w-full">
+    <tbody>
+      <tr>
+        <th class="w-32"><%= Region.model_name.human %></th>
+        <td><%= @wine.region.name %></td>
+      </tr>
+      <tr>
+        <th class="w-32"><%= Wine.human_attribute_name(:jpn_name) %></th>
+        <td><%= @wine.jpn_name %></td>
+      </tr>
+      <tr>
+        <th class="w-32"><%= Wine.human_attribute_name(:producer) %></th>
+        <td><%= @wine.producer %></td>
+      </tr>
+      <tr>
+        <th class="w-32"><%= Wine.human_attribute_name(:category) %></th>
+        <td><%= @wine.category_i18n %></td>
+      </tr>
+      <tr>
+        <th class="w-32"><%= Wine.human_attribute_name(:color) %></th>
+        <td><%= @wine.color_i18n %></td>
+      </tr>
+      <tr>
+        <th class="w-32"><%= Wine.human_attribute_name(:price) %></th>
+        <td><%= @wine.price %>円</td>
+      </tr>
+      <tr>
+        <th class="w-32"><%= Wine.human_attribute_name(:description) %></th>
+        <td><%= @wine.description %></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-      <button class="btn btn-primary">Get Started</button>
     </div>
   </div>
 </div>

@@ -1,4 +1,9 @@
-<div class="text-redwine"><h1>Wine#index</h1></div>
+<div class="text-sm breadcrumbs ml-4">
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= t('wines.index.title') %></li>
+  </ul>
+</div>
 <div class="flex flex-wrap">
 <%= render @wines %>
 </div>

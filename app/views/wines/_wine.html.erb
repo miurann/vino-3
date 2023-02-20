@@ -1,7 +1,7 @@
 
 <div class="card w-96 bg-white shadow-xl m-8">
 <%= link_to wine_path(wine) do %>
-  <figure><%= image_tag 'wines/wine_no_image.jpg', alt:'wine_image' %></figure>
+  <figure><%= image_tag wine.image_url, alt:'wine_image' %></figure>
   <div class="card-body">
     <h2 class="card-title">
       <%= wine.name %>
