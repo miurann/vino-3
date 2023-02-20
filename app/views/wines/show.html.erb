@@ -1,2 +1,83 @@
-<h1>Wine#show</h1>
-<p>Find me in app/views/wine/show.html.erb</p>
+<h1>Wine#show</h>
+<div class="hero min-h-screen bg-base-200">
+  <div class="hero-content flex-col lg:flex-row">
+    <%= image_tag 'wines/wine_no_image.jpg', alt:'wine_image', class:'max-w-sm rounded-lg shadow-2xl' %>
+    <div>
+      <h1 class="text-5xl font-bold"><%= @wine.name %></h1>
+
+<div class="overflow-x-auto">
+  <table class="table w-full">
+    <tbody>
+      <tr>
+        <th>ボリューム</th>
+        <td>軽い</td>
+        <td>
+        <ul class="steps">
+          <li class="step<%= " step-primary" if @wine.body_before_type_cast == 0 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.body_before_type_cast == 1 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.body_before_type_cast == 2 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.body_before_type_cast == 3 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.body_before_type_cast == 4 %>" data-content=""></li>
+        </ul>
+        </td>
+        <td>重い</td>
+      </tr>
+      <tr>
+        <th>甘み</th>
+        <td>ドライ</td>
+        <td>
+        <ul class="steps">
+          <li class="step<%= " step-primary" if @wine.sweetness_before_type_cast == 0 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.sweetness_before_type_cast == 1 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.sweetness_before_type_cast == 2 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.sweetness_before_type_cast == 3 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.sweetness_before_type_cast == 4 %>" data-content=""></li>
+        </ul>
+        </td>
+        <td>甘い</td>
+      </tr>
+      <tr>
+        <th>酸味</th>
+        <td>まろやか</td>
+        <td>
+        <ul class="steps">
+          <li class="step<%= " step-primary" if @wine.acidity_before_type_cast == 0 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.acidity_before_type_cast == 1 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.acidity_before_type_cast == 2 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.acidity_before_type_cast == 3 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.acidity_before_type_cast == 4 %>" data-content=""></li>
+        </ul>
+        </td>
+        <td>シャープ</td>
+      </tr>
+      <tr>
+        <th>タンニン</th>
+        <td>控えめ</td>
+        <td>
+        <ul class="steps">
+          <li class="step<%= " step-primary" if @wine.acidity_before_type_cast == 0 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.acidity_before_type_cast == 1 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.acidity_before_type_cast == 2 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.acidity_before_type_cast == 3 %>" data-content=""></li>
+          <li class="step<%= " step-primary" if @wine.acidity_before_type_cast == 4 %>" data-content=""></li>
+        </ul>
+        </td>
+        <td>強い</td>
+      </tr>
+      <tr>
+        <th>香り</th>
+        <td>
+        <div class="flex flex-row">
+          <% @wine.aromas.each do |aroma| %>
+            <div><%= image_tag aroma.image_url, class: 'mask mask-circle', size: '30x30' %></div>
+          <% end %>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<%= t('.title') %>
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col"><%= Aroma.human_attribute_name(:id) %></th>
+            <th scope="col"><%= Aroma.human_attribute_name(:name) %></th>
+            <th scope="col"><%= Aroma.human_attribute_name(:image) %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render @aromas %>
+        </tbody>
+      </table>
+    </div>
+  </div>

@@ -16,6 +16,12 @@
         <%= link_to 'Create Wine', new_admin_wine_path, class: 'nav-link' %>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
+        <%= link_to 'Aromas', admin_aromas_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <%= link_to 'Create Aroma', new_admin_aroma_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
         <%= button_to "Logout", admin_logout_path, method: :delete, class: 'nav-link' %>
       </li>
     </ul>
