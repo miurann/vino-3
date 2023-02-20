@@ -3,7 +3,9 @@ module.exports = {
     extend: {
       colors: {
         "redwine": "#db2777",
-        "whitewine": "#bef264",
+        "whitewine": "#a3e635",
+        "rosewine": "#fb7185",
+        "otherwine": "#fbbf24"
       },
     },
     fontFamily: {

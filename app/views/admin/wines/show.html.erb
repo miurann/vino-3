@@ -60,6 +60,12 @@
           <td><%= @wine.description %></td>
         </tr>
         <tr>
+          <th scope="row"><%= Wine.human_attribute_name(:image) %></th>
+        <td>
+          <%= image_tag @wine.image_url, size: '100x100' %>
+        </td>
+        </tr>
+        <tr>
           <th scope="row"><%= Wine.human_attribute_name(:created_at) %></th>
           <td><%= l @wine.created_at, format: :long %></td>
         </tr>

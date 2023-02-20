@@ -1,4 +1,5 @@
 class Wine < ApplicationRecord
+  mount_uploader :image, WineImageUploader
   validates :name, presence: true
   validates :producer, presence: true
   validates :jpn_name, presence: true
@@ -21,14 +22,4 @@ class Wine < ApplicationRecord
   enum acidity: { smooth: 0, medium_smooth: 1, middle_a: 2, acidulous: 3, sharp: 4 }
   enum body: { light: 0, medium_light: 1 , medium: 2, medium_heavy: 3, heavy: 4 }
   enum tannin: { very_little: 0, little: 1, middle_t: 2, many: 3, so_many: 4 }
-
-  def wine_color
-    if color == 'red'
-      'primary'
-    elsif color == 'white'
-      'secondary'
-    else
-      'accent'
-    end
-  end
 end
