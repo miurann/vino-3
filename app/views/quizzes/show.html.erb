@@ -1,2 +1,8 @@
+<div class="text-sm breadcrumbs ml-4">
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to t('quizzes.index.title'), quizzes_path %></li>
+    <li><%= t('.title', region: @region.name) %></li>
+  </ul>
+</div>
 <%= @region.name %>
-

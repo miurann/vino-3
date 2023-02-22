@@ -1,7 +1,26 @@
-<h1>Descriptions#show</h1>
-<div class="container mx-auto px-36">
-  <p><%= @question.content %></p>
-  <div class="flex flex-col w-1/2 mx-auto">
-    <%= @question.description %>
+<div class="text-sm breadcrumbs ml-4">
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to t('quizzes.index.title'), quizzes_path %></li>
+    <li><%= link_to t('quizzes.show.title', region: @region.name), quiz_path(@region) %></li>
+    <li><%= t('questions.show.title') %></li>
+  </ul>
+</div>
+<div class="container mx-auto">
+  <div class="w-1/2">
+  <p>Q. <%= @question.content %></p></div>
+  <div class="flex flex-row mt-6">
+    <div class="basis-1/2">
+      <p>A. 正解は<span class="font-bold"><%= @correct_choice.content %></span>です。</p>
+      <p><%= @question.description %></p>
+      <% if @next.present? %>
+        <%= link_to quiz_question_path(quiz_id: @region.id, id: @next.id) do %><button class="btn btn-wide">次の問題</button>
+        <% end %>
+      <% else %>
+        <%= link_to quizzes_path do %><button class="btn btn-wide">州選択に戻る</button>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="basis-1/2"><%= render 'wine', wine: @question.wine %></div>
   </div>
 </div>

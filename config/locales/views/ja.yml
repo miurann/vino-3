@@ -28,6 +28,14 @@ ja:
       title: 'ワイン一覧'
     show:
       title: 'ワイン詳細'
+  quizzes:
+    index:
+      title: '州選択'
+    show:
+      title: '%{region}'
+  questions:
+    show:
+      title: 'クイズ'
   admin:
     wines:
       index:

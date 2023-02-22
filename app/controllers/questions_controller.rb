@@ -8,5 +8,6 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
     @choices = @question.choices
     @correct_choice = @choices.find_by(correct_answer: true)
+    @region = Region.find(params[:quiz_id])
   end
 end
