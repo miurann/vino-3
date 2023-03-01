@@ -1,9 +1,8 @@
 <div class="float-left h-screen">
-<ul class="menu bg-base-100 w-56">
-  <li class="hover-bordered"><%= link_to '州選択に戻る', quizzes_path %></li>
-<% num = 0 %>
-<% @questions.each do |question| %>
-  <li class="hover-bordered"><%= link_to "第 #{ num += 1 } 問", quiz_question_path(question.region_id, question.id) %></li>
-<% end %>
-</ul>
+    <ul class="menu bg-base-100 w-56">
+      <li class="hover-bordered"><%= link_to '州選択に戻る', quizzes_path %></li>
+      <% @questions.each_with_index do |question, i| %>
+        <li class="hover-bordered"><%= link_to "Question #{ i + 1 } ", quiz_question_path(question.region_id, question.id) %></li>
+      <% end %>
+    </ul>
 </div>
