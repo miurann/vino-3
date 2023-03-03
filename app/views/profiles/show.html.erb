@@ -1,0 +1,19 @@
+<div class="text-sm breadcrumbs ml-4">
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= t('.title') %></li>
+  </ul>
+</div>
+<div class="card card-side bg-white p-4 mx-auto w-2/3">
+<%= image_tag @user.avatar_url, class: 'mask mask-circle', size: '150x150', alt: 'profile image' %>
+  <div class="card-body">
+    <ul>
+      <li><%= @user.name %></li>
+      <li><%= @user.email %></li>
+    <div class="card-actions justify-end">
+    <%= link_to edit_profile_path do %>
+      <button class="btn btn-primary">アカウント編集</button>
+    <% end %>
+    </div>
+  </div>
+</div>

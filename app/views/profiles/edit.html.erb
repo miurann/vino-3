@@ -1,0 +1,27 @@
+<div class="text-sm breadcrumbs ml-4">
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to t('profiles.show.title'), profile_path %></li>
+    <li><%= t('.title') %></li>
+  </ul>
+</div>
+<div class="container mx-auto w-1/2">
+  <%= form_with model: @user, url: profile_path, local: true do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="form-group">
+      <%= f.text_field :name, class: 'input form-control bg-white w-full', placeholder: 'name' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.text_field :email, class: 'input form-control bg-white w-full', placeholder: 'email' %>
+    </div>
+    <div class="form-group">
+    <%= f.label :avatar %>
+      <%= f.file_field :avatar, class: 'form-control' %>
+    </div>
+    <%= f.submit '登録', class: 'btn btn-primary' %>
+  <% end %>
+</div>
+<div class="container mx-auto w-1/2 mt-10 relative">
+    <%= button_to profile_path, method: :delete, data: { confirm: t('defaults.message.delete_confirm') }, class: 'btn btn-error absolute right-0' do %>アカウント削除<% end %>
+</div>

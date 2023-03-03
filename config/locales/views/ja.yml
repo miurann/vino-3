@@ -23,6 +23,11 @@ ja:
       title: 'ログイン'
       to_register_page: '登録ページへ'
       password_forget: 'パスワードをお忘れの方はこちら'
+  profiles:
+    show:
+      title: 'マイページ'
+    edit:
+      title: 'アカウント編集'
   wines:
     index:
       title: 'ワイン一覧'
