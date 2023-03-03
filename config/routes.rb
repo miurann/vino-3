@@ -5,18 +5,14 @@ Rails.application.routes.draw do
   delete 'logout', to: 'user_sessions#destroy'
   resources :users
   resources :admin_users
-  resources :wines, only: %i[index show] do
-    collection  do
-      get 'bookmarks'
-    end
-  end
+  resources :wines, only: %i[index show]
+  resources :achievements, only: %i[create]
+  resource :profile, only: %i[show edit update destroy]
   resources :quizzes, only: %i[index show] do
     resources :questions, only: %i[index show] do
       get 'description', to: 'descriptions#show'
     end
   end
-  resources :achievements, only: %i[create]
-  resources :bookmarks, only: %i[create destroy]
 
   namespace :admin do
     root to: 'dashboards#index'
