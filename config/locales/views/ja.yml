@@ -28,6 +28,19 @@ ja:
       title: 'マイページ'
     edit:
       title: 'アカウント編集'
+  password_resets:
+    new:
+      title: 'パスワードリセット申請'
+      submit: '送信'
+    edit:
+      title: 'パスワードリセット'
+      new_password: '新しいパスワード'
+      password_confirmation: '新しいパスワード(確認)'
+    create:
+      success: 'パスワードリセット手順を送信しました'
+    update:
+      success: 'パスワードを変更しました'
+      fail: 'パスワードの変更に失敗しました'
   wines:
     index:
       title: 'ワイン一覧'

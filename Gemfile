@@ -43,7 +43,9 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 gem 'carrierwave'
+gem 'config'
 gem 'cssbundling-rails'
+gem 'pry-rails'
 gem 'enum_help'
 gem 'foreman'
 gem 'jsbundling-rails'
@@ -57,6 +59,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails', '~> 6.0.0.rc1'
   gem 'factory_bot_rails'
+  gem 'letter_opener_web', '~> 2.0'
 end
 
 group :development do
