@@ -1,0 +1,9 @@
+<div class="text-sm breadcrumbs ml-4">
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= t('.title') %></li>
+  </ul>
+</div>
+<div class="flex flex-wrap justify-between mx-8">
+<%= render partial: 'progress', collection: @regions, as: 'region' %>
+</div>

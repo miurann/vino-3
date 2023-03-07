@@ -6,6 +6,7 @@ ja:
     show: '詳細'
     edit: '編集'
     delete: '削除'
+    profile: 'マイページ'
     message:
       require_login: 'ログインしてください'
       delete_confirm: '削除してよろしいですか？'
@@ -54,6 +55,9 @@ ja:
   questions:
     show:
       title: 'クイズ'
+  achievements:
+    index:
+      title: '解答率一覧'
   admin:
     wines:
       index:

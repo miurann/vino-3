@@ -1,4 +1,9 @@
 class AchievementsController < ApplicationController
+  def index
+    @region = Region.find(6)
+    @regions = Region.all
+  end
+
   def create
     question = Question.find(params[:question_id])
     @choices = question.choices

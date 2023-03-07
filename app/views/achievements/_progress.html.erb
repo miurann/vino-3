@@ -1,0 +1,6 @@
+<div class="card bg-white m-3 basis-1/6">
+  <div class="card-body">
+    <div class="radial-progress mx-auto <%= 'text-primary' if current_user.progress(region) == 100 %>" style="--value:<%= current_user.progress(region) %>;--size:7rem; --thickness: 6px;"><%= current_user.progress(region) %>%</div>
+    <p><i class="<%= 'fa-solid fa-crown' if current_user.progress(region) == 100 %> text-primary"></i><%= region.name %></p>
+  </div>
+</div>
