@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :admin_users
   resources :password_resets, only: %i[new create edit update]
   resources :wines, only: %i[index show]
-  resources :achievements, only: %i[create]
+  resources :achievements, only: %i[index create]
   resource :profile, only: %i[show edit update destroy]
   resources :quizzes, only: %i[index show] do
     resources :questions, only: %i[index show] do

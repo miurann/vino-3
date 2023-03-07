@@ -39,7 +39,13 @@ ja:
       region: '生産州'
       grape_variety: 'ぶどう品種'
       aroma: 'アロマ'
+      user: 'ユーザー'
+      achievement: '解答実績'
     attributes:
+      user:
+        name: '名前'
+        email: 'メールアドレス'
+        avatar: 'プロフィール画像'
       wine:
         name: 'ワイン名'
         producer: '生産者'

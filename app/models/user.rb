@@ -22,4 +22,15 @@ class User < ApplicationRecord
   def answered?(choice)
     correct_choices.include?(choice)
   end
+
+  def progress(region)
+    total = Question.where(region_id: region.id).count
+    record = Achievement.includes(:user, choice: { question: :region}).where(user: self).where(region: {id: region.id }).count
+    if record.zero?
+      0
+    else
+    achievement = (record / total.to_f * 100).to_i
+    achievement
+    end
+  end
 end

@@ -4,4 +4,5 @@ class Question < ApplicationRecord
 
   belongs_to :wine
   has_many :choices, dependent: :destroy
+  belongs_to :region
 end
