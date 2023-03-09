@@ -21,3 +21,27 @@ Question.seed do |s|
   s.wine_id     = 3
   s.region_id   = 3
 end
+
+Question.seed do |s|
+  s.id          = 4
+  s.content     = 'ワインの第4問出題テストです'
+  s.description = '第4問の正解解説です'
+  s.wine_id     = 4
+  s.region_id   = 2
+end
+
+Question.seed do |s|
+  s.id          = 5
+  s.content     = 'ワインの第5問出題テストです'
+  s.description = '第5問の正解解説です'
+  s.wine_id     = 5
+  s.region_id   = 2
+end
+
+Question.seed do |s|
+  s.id          = 6
+  s.content     = 'ワインの第6問出題テストです'
+  s.description = '第6問の正解解説です'
+  s.wine_id     = 6
+  s.region_id   = 2
+end

@@ -46,3 +46,45 @@ Choice.seed do |s|
   s.correct_answer = true
   s.question_id    = 3
 end
+
+Choice.seed do |s|
+  s.id             = 8
+  s.content        = 'せんたくし１'
+  s.correct_answer = false
+  s.question_id    = 4
+end
+
+Choice.seed do |s|
+  s.id             = 9
+  s.content        = '正解の選択肢'
+  s.correct_answer = true
+  s.question_id    = 4
+end
+
+Choice.seed do |s|
+  s.id             = 10
+  s.content        = 'せんたくし１'
+  s.correct_answer = false
+  s.question_id    = 5
+end
+
+Choice.seed do |s|
+  s.id             = 11
+  s.content        = '正解の選択肢'
+  s.correct_answer = true
+  s.question_id    = 5
+end
+
+Choice.seed do |s|
+  s.id             = 12
+  s.content        = 'せんたくし１'
+  s.correct_answer = false
+  s.question_id    = 6
+end
+
+Choice.seed do |s|
+  s.id             = 13
+  s.content        = '正解の選択肢'
+  s.correct_answer = true
+  s.question_id    = 6
+end

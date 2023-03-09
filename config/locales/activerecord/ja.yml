@@ -46,6 +46,8 @@ ja:
         name: '名前'
         email: 'メールアドレス'
         avatar: 'プロフィール画像'
+        password: 'パスワード'
+        password_confirmation: 'パスワード(確認)'
       wine:
         name: 'ワイン名'
         producer: '生産者'
