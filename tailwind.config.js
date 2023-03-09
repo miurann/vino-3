@@ -7,6 +7,10 @@ module.exports = {
         "rosewine": "#fb7185",
         "otherwine": "#fbbf24"
       },
+      fontFamily: {
+        kalam: ["Kalam"],
+        mplus: ["'M PLUS Rounded 1c'"]
+      },
     },
     fontFamily: {
       body: [
