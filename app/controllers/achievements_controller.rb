@@ -1,6 +1,5 @@
 class AchievementsController < ApplicationController
   def index
-    @region = Region.find(6)
     @regions = Region.all
   end
 

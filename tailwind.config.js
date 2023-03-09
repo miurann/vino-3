@@ -42,5 +42,5 @@ module.exports = {
     './app/assets/stylesheets/**/*.css',
     './app/assets/javascripts/**/*.js'
   ],
-  plugins: [require("daisyui")]
+  plugins: [require("@tailwindcss/typography"), require("daisyui")]
 }

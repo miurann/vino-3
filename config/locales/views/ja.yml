@@ -1,12 +1,14 @@
 ja:
   defaults:
     login: 'ログイン'
-    register: '登録'
+    register: '会員登録'
     logout: 'ログアウト'
     show: '詳細'
     edit: '編集'
     delete: '削除'
     profile: 'マイページ'
+    privacy_policy: 'プライバシーポリシー'
+    terms: '利用規約'
     message:
       require_login: 'ログインしてください'
       delete_confirm: '削除してよろしいですか？'

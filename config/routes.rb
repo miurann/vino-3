@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
   root to: 'users#index'
   get 'login', to: 'user_sessions#new'
@@ -15,7 +16,8 @@ Rails.application.routes.draw do
       get 'description', to: 'descriptions#show'
     end
   end
-
+  get 'privacy_policy', to: 'static_pages#privacy_policy'
+  get 'terms', to: 'static_pages#terms'
   namespace :admin do
     root to: 'dashboards#index'
     get 'login', to: 'user_sessions#new'
