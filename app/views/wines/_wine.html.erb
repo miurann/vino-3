@@ -1,10 +1,10 @@
 
-<div class="card w-96 bg-white shadow-xl m-8">
+<div class="card w-1/5 bg-white m-2">
 <%= link_to wine_path(wine) do %>
-  <figure><%= image_tag wine.image_url, alt:'wine_image' %></figure>
+  <figure><%= image_tag wine.image_url, alt:'wine_image', size:'250x250' %></figure>
   <div class="card-body">
     <h2 class="card-title">
-      <%= wine.name %>
+      <%= wine.name.truncate(40) %>
     </h2>
     <p></p>
     <div class="card-actions justify-end">

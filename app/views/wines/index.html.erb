@@ -4,6 +4,8 @@
     <li><%= t('wines.index.title') %></li>
   </ul>
 </div>
-<div class="flex flex-wrap">
+<div class="flex flex-wrap justify-between
+            before:content-[''] before:w-1/5 before:order-last before:m-4
+            after:content-[''] after:w-1/5 before:m-8">
 <%= render @wines %>
 </div>
