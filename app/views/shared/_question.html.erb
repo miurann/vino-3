@@ -1,0 +1,10 @@
+<li class="hover-bordered">
+  <%= link_to quiz_question_path(question.region_id, question.id) do %>
+    <p>
+    Question <%= question_counter + 1 %>
+    <% if current_user.answered_question?(question) %>
+      <i class="fa-solid fa-crown text-secondary"></i>
+    <% end %>
+    </p>
+  <% end %>
+  </li>

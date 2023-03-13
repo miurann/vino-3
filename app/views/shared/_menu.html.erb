@@ -1,8 +1,6 @@
 <div class="float-left h-screen">
-    <ul class="menu bg-base-100 w-56">
+    <ul class="menu bg-base-100 w-56 mr-8">
       <li class="hover-bordered"><%= link_to '州選択に戻る', quizzes_path %></li>
-      <% @questions.each_with_index do |question, i| %>
-        <li class="hover-bordered"><%= link_to "Question #{ i + 1 } ", quiz_question_path(question.region_id, question.id) %></li>
-      <% end %>
+      <%= render partial: 'shared/question', collection: @questions %>
     </ul>
 </div>

@@ -35,7 +35,7 @@
     <p class="py-4">正解は<%= @correct_choice.content %>です。</p>
     <div class="modal-action">
       <%= button_to achievements_path(choice_id: @correct_choice.id, question_id: @question.id, quiz_id: params[:quiz_id]), data: { "turbo-method": :post } do %>
-        <button class="btn">OK</button>
+        <button class="btn btn-secondary">OK</button>
       <% end %>
     </div>
   </div>
