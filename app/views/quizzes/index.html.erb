@@ -6,7 +6,7 @@
 </div>
 <div class="flex m-10">
   <div class="flex-initial w-1/2">
-    <%= image_tag 'italymap02.png', usemap: '#ImageMap', alt: 'Italy map', size: '700x700' %>
+    <%= image_tag 'italymap02.png', usemap: '#ImageMap', alt: 'Italy map', size: '620x620' %>
       <map name="ImageMap">
         <%= link_to '/quizzes/7' do %><area shape="poly" coords="504,80,504,87,478,111,487,124,483,134,496,155,519,153,524,162,531,158,551,165,562,136,549,139,553,130,560,123,543,117,551,102,565,88,548,84,534,86,524,81,507,79,507,73" alt="Friuli-Venezia Giulia" /><% end %>
         <%= link_to '/quizzes/6' do %><area shape="poly" coords="495,84,472,112,479,127,490,155,503,164,515,160,522,168,465,205,486,229,481,237,443,223,431,230,375,195,372,172,380,165,403,171,417,148,439,143,447,133,462,120,451,103,454,95,466,88,489,81,494,83,495,84" alt="Veneto" /><% end %>
@@ -31,7 +31,14 @@
       </map>
   </div>
   <div class="flex-initial w-1/2">
-    <p>文章テスト
-    てすとtest試験ですHallo WORLD</p>
+    <article class="prose mx-auto">
+      <h1 class="font-kalam text-secondary"><i class="fa-solid fa-angles-left"></i> let's click to start!</h1>
+      <p class="text-sm text-neutral-500">
+      各州のワインに因んだクイズを出題します。イタリア全般、ワイン全般のクイズは
+      全ての州から出題されます。</p>
+      <div class="flex flex-wrap">
+        <%= render partial: 'region', collection: @regions, as: 'region' %>
+      </div>
+    </article>
   </div>
 </div>

@@ -1,6 +1,7 @@
 class QuizzesController < ApplicationController
   layout 'questions_menu', only: %i[show]
   def index
+    @regions = Region.all
   end
 
   def show

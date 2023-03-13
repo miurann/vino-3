@@ -1,0 +1,24 @@
+
+<div class="card bg-white m-2">
+<%= link_to wine_path(wine) do %>
+  <figure><%= image_tag wine.image_url, alt:'wine_image', size:'250x250' %></figure>
+  <div class="card-body">
+    <h2 class="card-title">
+      <%= wine.name %>
+    </h2>
+    <p></p>
+    <div class="card-actions justify-end">
+      <%if wine.color == 'red' %>
+        <div class="badge bg-redwine border-redwine text-white">red</div>
+      <% elsif wine.color == 'white' %>
+        <div class="badge bg-whitewine border-whitewine text-white">white</div>
+      <% elsif wine.color == 'rose' %>
+        <div class="badge bg-rosewine border-rosewine text-white">rose</div>
+      <% else %>
+        <div class="badge bg-otherwine border-otherwine text-white">other</div>
+      <% end %>
+      <div class="badge badge-outline"><%= wine.region.name %></div>
+    </div>
+  </div>
+  <% end %>
+</div>

@@ -23,6 +23,11 @@ class User < ApplicationRecord
     correct_choices.include?(choice)
   end
 
+  def answered_question?(question)
+    choice = question.choices.find_by(correct_answer: true)
+    self.answered?(choice)
+  end
+
   def progress(region)
     total = Question.where(region_id: region.id).count
     record = Achievement.includes(:user, choice: { question: :region}).where(user: self).where(region: {id: region.id }).count

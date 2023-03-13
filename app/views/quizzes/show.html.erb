@@ -5,4 +5,25 @@
     <li><%= t('.title', region: @region.name) %></li>
   </ul>
 </div>
-<%= @region.name %>
+<article class="prose">
+  <h2 class="font-kalam mt-6"><%= @region.name %></h2>
+</article>
+<div class="flex flex-row mt-4 w-2/3 mx-auto">
+  <div class="basis-1/2">
+      <p>左のメニューから選択してください</p>
+      <p>正解したクイズには<i class="fa-solid fa-crown text-secondary"></i>が表示されます</p>
+  </div>
+  <div class="basis-1/2 flex flex-col">
+    <div class="ml-4">
+      <p><%= current_user.name %>さんの解答率</p>
+    </div>
+    <div class="w-1/2 min-w-fit">
+      <%= render  'achievements/progress', region: @region %>
+    </div>
+    <div class="ml-4">
+      <%= link_to achievements_path, class:'link link-hover hover:text-secondary' do %>
+        <%= t('achievements.index.title') %> <i class="fa-solid fa-angles-right"></i>
+      <% end %>
+    </div>
+  </div>
+</div>
