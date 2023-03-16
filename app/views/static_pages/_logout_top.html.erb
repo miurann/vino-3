@@ -1,0 +1,64 @@
+<div class="hero min-h-screen" style="background-image: url(<%= asset_path "top02.jpg" %>);">
+  <div class="hero-overlay bg-opacity-20 bg-white"></div>
+  <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-md bg-white bg-opacity-70 font-mplus">
+      <h2 class="mt-5 mb-3 text-lg">明日選ぶワインをもっと楽しく</h2>
+      <h1 class="mb-5 text-5xl font-kalam">Vino!Vino!!Vino!!!</h1>
+      <h2 class="mb-1 text-xl font-bold">イタリアワイン特化の</h1>
+      <h2 class="mb-5 text-xl font-bold">クイズ＆情報サービスです</h1>
+      <%= link_to new_user_path do %>
+        <button class="btn mb-8">会員登録してクイズに挑戦</button>
+      <% end %>
+      <div class="mb-4">
+        <%= link_to '#guide' do %>
+          <button class="btn btn-circle px-8 py-4">guide<i class="fa-solid fa-angles-down"></i></button>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="guide" class="flex justify-center">
+  <h1 class="font-kalam text-5xl my-5">guide</h1>
+</div>
+<div class="flex flex-row justify-center mt-8 w-10/12 mx-auto">
+  <div class="basis-1/2 mx-4 place-self-center">
+    <button class="btn btn-circle py-4 italic">1</button>
+    <p class="font-semibold">イタリアワインに関するクイズにチャレンジ</p>
+    <p>全問選択問題です。いつでも気軽に挑戦できます</p>
+  </div>
+  <div class="basis-1/3 mockup-window border bg-primary">
+    <div class="flex justify-center px-4 py-16 bg-base-200">
+      <%= image_tag 'intro01.png' %>
+    </div>
+  </div>
+</div>
+<div class="flex flex-row justify-center mt-8 w-10/12 mx-auto">
+  <div class="basis-1/2 mx-4 place-self-center">
+    <button class="btn btn-circle py-4 italic">2</button>
+    <p class="font-semibold">解説とワイン紹介をチェック</p>
+    <p>正解するとクイズの解説と、関連するワインを確認できます</p>
+  </div>
+  <div class="basis-1/3 mockup-window border bg-primary">
+    <div class="flex justify-center px-4 py-16 bg-base-200">
+      <%= image_tag 'intro02.png' %>
+    </div>
+  </div>
+</div>
+<div class="flex flex-row justify-center mt-8 w-10/12 mx-auto">
+  <div class="basis-1/2 mx-4 place-self-center">
+    <button class="btn btn-circle py-4 italic">3</button>
+    <p class="font-semibold">気になるワインの詳細をチェック</p>
+    <p>味わいや香りなど、お好みのワインを見つけてください</p>
+    <p class="text-primary">(※検索機能は後日リリース予定)</p>
+  </div>
+  <div class="basis-1/3 mockup-window border bg-primary">
+    <div class="flex justify-center px-4 py-16 bg-base-200">
+      <%= image_tag 'intro03.png' %>
+    </div>
+  </div>
+</div>
+<div class="flex justify-center mt-8">
+  <%= link_to new_user_path do %>
+    <button class="btn btn-wide mb-8">会員登録して始める</button>
+  <% end %>
+</div>

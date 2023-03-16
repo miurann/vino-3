@@ -5,7 +5,8 @@ module.exports = {
         "redwine": "#db2777",
         "whitewine": "#a3e635",
         "rosewine": "#fb7185",
-        "otherwine": "#fbbf24"
+        "otherwine": "#fbbf24",
+        "grayscale": "#262626",
       },
       fontFamily: {
         kalam: ["Kalam"],
