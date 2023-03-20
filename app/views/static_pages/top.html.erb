@@ -1,1 +1,5 @@
-<%= render 'logout_top' %>
+<% if current_user %>
+  <%= render 'login_top' %>
+<% else %>
+  <%= render 'logout_top' %>
+<% end %>

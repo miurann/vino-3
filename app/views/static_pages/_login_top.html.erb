@@ -1,0 +1,35 @@
+<div class="hero min-h-screen" style="background-image: url(<%= asset_path "top02.jpg" %>);">
+  <div class="hero-overlay bg-white text-neutral-content bg-gradient-to-r from-base-100 bg-opacity-60"></div>
+  <div class="hero-content text-center flex justify-start">
+    <div class="max-w-4xl bg-white bg-gradient-to-r from-base-100 bg-opacity-70 font-mplus">
+      <div class="flex flex-row m-10">
+        <div class="flex flex-col">
+          <div class="mt-16">
+            <h1 class="mb-5 text-5xl font-kalam">Vino!Vino!!Vino!!!</h1>
+          </div>
+          <div class="flex flex-row">
+            <div>
+              <%= image_tag 'flog02.png', size:'150x150' %>
+            </div>
+            <div class="chat chat-start">
+              <div class="chat-bubble bg-info">ゔぃーのゔぃーのゔぃーのと読むよ</div>
+            </div>
+          </div>
+        </div>
+        <div class="basis-1/2">
+          <div class="btn-group btn-group-vertical ml-6">
+            <%= link_to quizzes_path do %>
+              <button class="btn btn-wide mb-8">クイズに挑戦</button>
+            <% end %>
+            <%= link_to wines_path do %>
+              <button class="btn btn-wide mb-8">ワイン一覧を見る</button>
+            <% end %>
+            <%= link_to achievements_path do %>
+              <button class="btn btn-wide mb-8">解答実績を見る</button>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
