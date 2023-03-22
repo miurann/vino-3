@@ -6,7 +6,8 @@
     "esbuild": "^0.16.10",
     "postcss": "^8.4.20",
     "sass": "^1.57.1",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.4",
+    "npm": "^8.11.0"
   },
   "scripts": {
     "build": "esbuild app/assets/javascripts/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
