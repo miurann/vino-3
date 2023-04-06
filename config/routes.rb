@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get 'privacy_policy', to: 'static_pages#privacy_policy'
   get 'terms', to: 'static_pages#terms'
   namespace :admin do
-    root to: 'dashboards#index'
+    root to: 'wines#index'
     get 'login', to: 'user_sessions#new'
     post 'login', to: 'user_sessions#create'
     delete 'logout', to: 'user_sessions#destroy'
