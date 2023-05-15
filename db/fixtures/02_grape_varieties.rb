@@ -27,3 +27,19 @@ GrapeVariety.seed do |s|
   s.id             = 6
   s.name        = 'Merlot(メルロ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 7
+  s.name        = 'Trebbiano(トレッビアーノ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 8
+  s.name        = 'Malvasia Bianca(マルヴァジア・ビアンカ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 9
+  s.name        = 'Roscetto(ロシェット)'
+end
+
