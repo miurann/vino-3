@@ -86,7 +86,7 @@
             </tr>
           </tbody>
         </table>
-        <table class="table table-compact w-full">
+        <table class="table-fixed table-compact w-3/4">
           <tbody>
             <tr>
               <th class="w-32"><%= Region.model_name.human %></th>
@@ -114,7 +114,7 @@
             </tr>
             <tr>
               <th class="w-32"><%= Wine.human_attribute_name(:description) %></th>
-              <td><%= @wine.description %></td>
+              <td><%= simple_format(@wine.description) %></td>
             </tr>
           </tbody>
         </table>
