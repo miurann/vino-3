@@ -43,3 +43,12 @@ GrapeVariety.seed do |s|
   s.name        = 'Roscetto(ロシェット)'
 end
 
+GrapeVariety.seed do |s|
+  s.id             = 10
+  s.name        = 'Fumin(フミン)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 11
+  s.name        = 'Garganega(ガルガーネガ)'
+end
