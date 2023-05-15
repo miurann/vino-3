@@ -11,7 +11,7 @@
     <div class="mb-4">
       <h1 class="text-3xl font-bold mb-8"><%= @wine.name %></h1>
       <div class="overflow-x-auto">
-        <table class="table table-compact w-full">
+        <table class="table-fixed table-compact w-full">
           <tbody>
             <tr>
               <th class="w-32"><%= Wine.human_attribute_name(:body) %></th>
@@ -71,7 +71,7 @@
             </tr>
           </tbody>
         </table>
-        <table class="table table-compact w-full">
+        <table class="table-fixed table-compact w-full">
           <tbody>
             <tr>
               <th class="w-32">香り</th>
@@ -80,6 +80,20 @@
                   <% @wine.aromas.each do |aroma| %>
                   <div class="tooltip" data-tip="<%= aroma.name %>"><%= image_tag aroma.image_url, class: 'mask mask-circle mx-2', size: '30x30' %>
                   </div>
+                  <% end %>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table-fixed table-compact w-full">
+          <tbody>
+            <tr>
+              <th class="w-32">使用ぶどう品種</th>
+              <td>
+                <div class="flex flex-row">
+                  <% @wine.grape_varieties.each do |grape| %>
+                    <%= grape.name %>
                   <% end %>
                 </div>
               </td>
