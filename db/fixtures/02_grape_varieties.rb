@@ -52,3 +52,18 @@ GrapeVariety.seed do |s|
   s.id             = 11
   s.name        = 'Garganega(ガルガーネガ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 12
+  s.name        = 'Canaiolo(カナイオーロ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 13
+  s.name        = 'Cabernet Sauvignon(カベルネ・ソーヴィニヨン)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 14
+  s.name        = 'Aglianico(アリアニコ)'
+end
