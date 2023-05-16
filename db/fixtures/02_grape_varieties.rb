@@ -67,3 +67,8 @@ GrapeVariety.seed do |s|
   s.id             = 14
   s.name        = 'Aglianico(アリアニコ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 15
+  s.name        = 'Nebbiolo(ネッビオーロ)'
+end
