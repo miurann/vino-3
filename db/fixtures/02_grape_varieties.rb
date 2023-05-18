@@ -72,3 +72,58 @@ GrapeVariety.seed do |s|
   s.id             = 15
   s.name        = 'Nebbiolo(ネッビオーロ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 16
+  s.name        = 'Cabernet Franc(カベルネ・フラン)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 17
+  s.name        = 'Sagrantino(サグランティーノ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 18
+  s.name        = 'Grechetto(グレケット)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 19
+  s.name        = 'Procanico(プロカニコ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 20
+  s.name        = 'Malvasia(マルヴァジア)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 21
+  s.name        = '	Corvina(コルヴィーナ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 22
+  s.name        = 'Rondinella(ロンディネッラ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 23
+  s.name        = 'Barbera(バルベーラ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 24
+  s.name        = 'Gaglioppo(ガリオッポ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 25
+  s.name        = 'Calabrese(カラブレーゼ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 26
+  s.name        = 'Primitivo(プリミティーボ)'
+end
