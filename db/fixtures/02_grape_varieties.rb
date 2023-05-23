@@ -132,3 +132,38 @@ GrapeVariety.seed do |s|
   s.id             = 27
   s.name        = 'Picolit(ピコリット)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 28
+  s.name        = 'Schioppettino(スキオッペッティーノ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 28
+  s.name        = 'Schioppettino(スキオッペッティーノ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 29
+  s.name        = 'Friulano(フリウラーノ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 30
+  s.name        = 'Ribolla Gialla(リボッラ・ジャッラ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 31
+  s.name        = 'Pinot Bianco(ピノ・ビアンコ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 32
+  s.name        = 'Pinot Grigio(ピノ・グリージョ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 33
+  s.name        = 'Sauvignon(ソーヴィニヨン)'
+end
