@@ -127,3 +127,8 @@ GrapeVariety.seed do |s|
   s.id             = 26
   s.name        = 'Primitivo(プリミティーボ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 27
+  s.name        = 'Picolit(ピコリット)'
+end
