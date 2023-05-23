@@ -139,11 +139,6 @@ GrapeVariety.seed do |s|
 end
 
 GrapeVariety.seed do |s|
-  s.id             = 28
-  s.name        = 'Schioppettino(スキオッペッティーノ)'
-end
-
-GrapeVariety.seed do |s|
   s.id             = 29
   s.name        = 'Friulano(フリウラーノ)'
 end
@@ -166,4 +161,24 @@ end
 GrapeVariety.seed do |s|
   s.id             = 33
   s.name        = 'Sauvignon(ソーヴィニヨン)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 34
+  s.name        = 'Chiavennasca(キアヴェンナスカ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 35
+  s.name        = 'Pinot Blanc(ピノ・ブラン)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 36
+  s.name        = 'Pinot Noir(ピノ・ノワール)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 28
+  s.name        = 'Pinot Nero(ピノ・ネーロ)'
 end
