@@ -182,3 +182,8 @@ GrapeVariety.seed do |s|
   s.id             = 37
   s.name        = 'Pinot Nero(ピノ・ネーロ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 38
+  s.name        = 'Moscato di Scanzo(モスカート・ディ・スカンツォ)'
+end
