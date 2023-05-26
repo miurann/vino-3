@@ -179,6 +179,6 @@ GrapeVariety.seed do |s|
 end
 
 GrapeVariety.seed do |s|
-  s.id             = 28
+  s.id             = 37
   s.name        = 'Pinot Nero(ピノ・ネーロ)'
 end
