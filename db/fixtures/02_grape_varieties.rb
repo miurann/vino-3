@@ -192,3 +192,13 @@ GrapeVariety.seed do |s|
   s.id             = 39
   s.name        = 'Albana (アルバーナ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 40
+  s.name        = 'Lambrusco (ランブルスコ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 41
+  s.name        = 'Lambrusco Maestri(ランブルスコ・マエストリ)'
+end
