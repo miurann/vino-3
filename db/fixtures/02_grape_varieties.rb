@@ -202,3 +202,8 @@ GrapeVariety.seed do |s|
   s.id             = 41
   s.name        = 'Lambrusco Maestri(ランブルスコ・マエストリ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 42
+  s.name        = 'Cesanese d\'Affile(チェザネーゼ・ダッフィーレ)'
+end
