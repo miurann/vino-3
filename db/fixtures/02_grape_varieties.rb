@@ -220,10 +220,5 @@ end
 
 GrapeVariety.seed do |s|
   s.id             = 45
-  s.name        = 'Trebbiano Toscano(トレッビアーノ・トスカーノ)'
-end
-
-GrapeVariety.seed do |s|
-  s.id             = 46
   s.name        = 'Greco(グレーコ)'
 end
