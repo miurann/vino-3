@@ -207,3 +207,23 @@ GrapeVariety.seed do |s|
   s.id             = 42
   s.name        = 'Cesanese d\'Affile(チェザネーゼ・ダッフィーレ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 43
+  s.name        = 'Malvasia del Lazio(マルヴァジーア・デル・ラツィオ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 44
+  s.name        = 'Malvasia Bianca di Candia(マルヴァジーア・ビアンカ・ディ・カンディア)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 45
+  s.name        = 'Trebbiano Toscano(トレッビアーノ・トスカーノ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 46
+  s.name        = 'Greco(グレーコ)'
+end
