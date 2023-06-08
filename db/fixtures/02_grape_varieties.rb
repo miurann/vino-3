@@ -222,3 +222,18 @@ GrapeVariety.seed do |s|
   s.id             = 45
   s.name        = 'Greco(グレーコ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 46
+  s.name        = 'Prie Blanc(プリエ・ブラン)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 47
+  s.name        = 'Tintilia(ティンティリア)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 48
+  s.name        = 'Bombino Bianco(ボンビーノ・ビアンコ)'
+end
