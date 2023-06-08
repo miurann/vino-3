@@ -252,3 +252,13 @@ GrapeVariety.seed do |s|
   s.id             = 51
   s.name        = 'Verdeca(ヴェルデーカ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 52
+  s.name        = 'Verdicchio(ヴェルディッキオ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 53
+  s.name        = 'Vernaccia Nera(ヴェルナッチャ・ネーラ)'
+end
