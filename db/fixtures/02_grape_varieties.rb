@@ -237,3 +237,18 @@ GrapeVariety.seed do |s|
   s.id             = 48
   s.name        = 'Bombino Bianco(ボンビーノ・ビアンコ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 49
+  s.name        = 'Coda di Volpe(コーダ・ディ・ヴォルペ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 50
+  s.name        = 'Falanghina(ファランギーナ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 51
+  s.name        = 'Verdeca(ヴェルデーカ)'
+end
