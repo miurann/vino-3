@@ -262,3 +262,13 @@ GrapeVariety.seed do |s|
   s.id             = 53
   s.name        = 'Vernaccia Nera(ヴェルナッチャ・ネーラ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 54
+  s.name        = 'Bombino Nero(ボンビーノ・ネーロ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 55
+  s.name        = 'Nero di Troia(ネロ・ディ・トロイア)'
+end
