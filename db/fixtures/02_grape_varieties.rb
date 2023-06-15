@@ -297,3 +297,18 @@ GrapeVariety.seed do |s|
   s.id             = 60
   s.name        = 'Nerello Cappuccio(ネレッロ・カップッチョ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 61
+  s.name        = 'Cannonau(カンノーナウ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 62
+  s.name        = 'Vermentino(ヴェルメンティーノ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 63
+  s.name        = 'Vernaccia di Oristano(ヴェルナッチャ・ディ・オリスターノ)'
+end
