@@ -272,3 +272,28 @@ GrapeVariety.seed do |s|
   s.id             = 55
   s.name        = 'Nero di Troia(ネロ・ディ・トロイア)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 56
+  s.name        = 'Zibibbo(ジビッボ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 57
+  s.name        = 'Frappato(フラッパート)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 58
+  s.name        = 'Nero d\'Avola(ネーロ・ダヴォラ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 59
+  s.name        = 'Nerello Mascarese(ネレッロ・マスカレーゼ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 60
+  s.name        = 'Nerello Cappuccio(ネレッロ・カップッチョ)'
+end
