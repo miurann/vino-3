@@ -312,3 +312,23 @@ GrapeVariety.seed do |s|
   s.id             = 63
   s.name        = 'Vernaccia di Oristano(ヴェルナッチャ・ディ・オリスターノ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 64
+  s.name        = 'Bosco(ボスコ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 65
+  s.name        = 'Albarola(アルバローラ)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 66
+  s.name        = 'Pigato(ピガート)'
+end
+
+GrapeVariety.seed do |s|
+  s.id             = 67
+  s.name        = 'Rossese(ロッセーゼ)'
+end
