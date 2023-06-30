@@ -332,3 +332,8 @@ GrapeVariety.seed do |s|
   s.id             = 67
   s.name        = 'Rossese(ロッセーゼ)'
 end
+
+GrapeVariety.seed do |s|
+  s.id             = 68
+  s.name        = 'Schiava(スキアーヴァ)'
+end
